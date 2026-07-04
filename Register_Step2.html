@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | Bar</title>
+    <link rel="stylesheet" href="Registration.css" />
+    <link rel="icon" href="logo/Logo_favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="login-logo">
+        <img src="logo/Big_logo.svg" alt="Game Bar" />
+      </div>
+
+      <div class="register-box">
+        <h2 class="reg-title" data-key="reg_title">СОЗДАНИЕ АККАУНТА</h2>
+
+        <form class="login-form">
+          <div class="input-group">
+            <label data-key="label_username">Придумайте имя аккаунта</label>
+            <input type="text" id="reg_username" required />
+          </div>
+
+          <div class="input-group">
+            <label data-key="label_new_pass">Придумайте пароль</label>
+            <input type="password" id="reg_password" required />
+          </div>
+
+          <div class="input-group">
+            <label data-key="label_confirm_pass">Подтвердите пароль</label>
+            <input type="password" id="reg_password" required />
+          </div>
+
+          <div class="btn-wrapper">
+            <a href="index.html" style="text-decoration: none">
+              <button type="button" class="btn-login" data-key="reg_continue">
+                ПРОДОЛЖИТЬ
+              </button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="translation.js"></script>
+  </body>
+</html>

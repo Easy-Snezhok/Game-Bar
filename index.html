@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | Bar</title>
+    <link rel="stylesheet" href="GameBar.css" />
+    <link rel="icon" href="logo/Logo_favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="logo/GTA.svg" fetchpriority="high" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader-content">
+        <div class="loader-logo">
+          <img src="logo/Big_logo.svg" alt="Game Bar" />
+        </div>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="main-logo">
+        <a href="index.html"><img src="logo/logo.svg" alt="Game Bar" /></a>
+      </div>
+
+      <form class="search">
+        <input
+          type="search"
+          data-key="search_placeholder"
+          placeholder="поиск..."
+          maxlength="500"
+        />
+        <button type="submit">
+          <img src="image_icons/Glass.svg" alt="" />
+        </button>
+      </form>
+
+      <div class="right-section">
+        <div class="exit">
+          <img src="logo/Vector.svg" alt="logo" />
+          <a href="Login.html" data-key="login">Войти</a>
+        </div>
+
+        <div class="basket">
+          <button>
+            <img class="basket-img" src="logo/Group.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-div">
+      <nav class="nav-bar">
+        <ul class="menu">
+          <li><a href="Catalog.html" data-key="nav_catalog">Каталог</a></li>
+          <li><a href="#popular-anchor" data-key="nav_new">Популярное</a></li>
+          <li><a href="Catalog.html" data-key="nav_news">Новости</a></li>
+          <li><a href="Catalog.html" data-key="nav_how">Как купить</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--Home page content-->
+
+    <section class="hero">
+      <div class="hero-content">
+        <!-- Русская версия -->
+        <div class="hero-text">
+          <h1 data-key="hero_title">Grand Theft Auto V</h1>
+        </div>
+        <div class="hero-description">
+          <div class="lang-block" data-lang-content="RU">
+            <h2 data-key="hero_welcome">Добро пожаловать в Лос-Сантос!</h2>
+            <p>
+              <span class="text-fix">
+                Это культовый экшн с открытым миром от Rockstar Games, ставший
+                настоящим блокбастером в индустрии видеоигр. Вам предстоит
+                окунуться в жизнь огромного мегаполиса Лос-Сантос и его
+                живописных окрестностей — округа Блейн, вдохновленных Южной
+                Калифорнией.<br /><br />
+                <span class="bold">Сюжет: — три судьбы</span><br /><br />
+                Впервые в серии сюжет строится вокруг сразу трех главных героев,
+                чьи пути пересекаются в череде опасных авантюр:<br /><br />
+                Вместе этой троице предстоит провернуть серию самых дерзких
+                ограблений в истории штата, чтобы выжить в мире, где против них
+                ополчились коррумпированные спецслужбы, мексиканские картели и
+                миллиардеры.<br /><br />
+                <span class="bold">Ключевые особенности игры</span><br /><br />
+                <span class="bold">Три героя — один геймплей:</span>
+                Вы можете переключаться между персонажами почти в любой момент.
+                У каждого из них свои уникальные способности: Майкл замедляет
+                время в стрельбе, Франклин — при вождении, а Тревор впадает в
+                боевую ярость.<br /><br />
+                <span class="bold">Масштабные ограбления:</span>
+                Тщательно планируйте каждое дело — выбирайте тактику (тихо или
+                со стрельбой) и нанимайте команду специалистов.<br /><br />
+                <span class="bold">Живой мир:</span>
+                Лос-Сантос поражает детализацией. Здесь можно играть в гольф,
+                заниматься йогой, охотиться, летать на самолетах или даже
+                исследовать морское дно на подводной лодке.<br /><br />
+                <span class="bold">GTA Online:</span>
+                В комплекте с основной игрой идет многопользовательский режим,
+                где вы создаете собственного персонажа и строите свою
+                криминальную империю вместе с друзьями.
+              </span>
+            </p>
+          </div>
+
+          <!-- Английская версия -->
+          <div class="lang-block" data-lang-content="EN" style="display: none">
+            <h2 data-key="hero_welcome">Welcome to Los Santos!</h2>
+            <p>
+              <span class="text-fix"
+                >This iconic open-world action game from Rockstar Games has
+                become a true blockbuster in the video game industry. You will
+                immerse yourself in the love life of the metropolis of Los
+                Santos and its picturesque surroundings, Blaine County, inspired
+                by Southern California.<br /><br />
+                <span class="bold">Plot: — Three Fates</span><br /><br />
+                For the first time in the series, the plot revolves around three
+                main characters, whose paths intersect in a series of dangerous
+                adventures:<br /><br />
+                Together, this trio must pull off a series of the most daring
+                robberies in state history to survive in a world where corrupt
+                intelligence agencies, Mexican cartels, and billionaires are
+                arrayed against them.<br /><br />
+                <span class="bold">Key features of the game</span><br /><br />
+                <span class="bold">Three heroes - one gameplay:</span>
+                You can switch between characters almost at any time. Each has
+                their own unique abilities: Michael slows down time while
+                shooting, Franklin slows down while driving, and Trevor enters a
+                combat rage.<br /><br />
+                <span class="bold">Large-scale robberies:</span>
+                Carefully plan each mission — choose your tactics (stealth or
+                gunfire) and hire a team of specialists.<br /><br />
+                <span class="bold">Living world:</span>
+                Los Santos is stunning in its detail. Here you can play golf, do
+                yoga, hunt, fly airplanes, or even exploring the seabed in a
+                submarine.<br /><br />
+                <span class="bold">GTA Online:</span>
+                The main game comes with a multiplayer mode, where you create
+                your own character and build your own criminal empire with your
+                friends.
+              </span>
+            </p>
+          </div>
+
+          <!--Немецкая версия-->
+          <div class="lang-block" data-lang-content="DE" style="display: none">
+            <h2>Willkommen в Los Santos!</h2>
+            <p>
+              <span class="text-fix">
+                Dieses legendäre Open-World-Actionspiel von Rockstar Games hat
+                sich zu einem echten Blockbuster der Videospielbranche
+                entwickelt. Tauchen Sie ein in die riesige Metropole Los Santos
+                und ihre malerische Umgebung, Blaine County, inspiriert von
+                Südkalifornien.<br /><br />
+                <span class="bold">Handlung: — Drei Schicksale</span
+                ><br /><br />
+                Zum ersten Mal in der Reihe dreht sich die Handlung um drei
+                Hauptfiguren, deren Wege sich in einer Reihe gefährlicher
+                Abenteuer kreuzen:<br /><br />
+                Gemeinsam muss das Trio eine Reihe der gewagtesten Raubüberfälle
+                in der Geschichte des Bundesstaates durchführen, um in einer
+                Welt zu überleben, in der korrupte Geheimdienste, mexikanische
+                Kartelle und Milliardäre gegen sie verbündet sind.<br /><br />
+                <span class="bold">Hauptmerkmale des Spiels</span><br /><br />
+                <span class="bold">Drei Helden – ein Gameplay:</span>
+                Du kannst fast jederzeit zwischen den Charakteren wechseln.
+                Jeder hat seine eigenen einzigartigen Fähigkeiten: Michael
+                verlangsamt die Zeit beim Schießen, Franklin verlangsamt die
+                Geschwindigkeit beim Fahren und Trevor gerät in einen
+                Kampfrausch.<br /><br />
+                <span class="bold">Groß angelegte Raubüberfälle:</span>
+                Plane jede Mission sorgfältig – wähle deine Taktik (Schleichen
+                oder Feuergefecht) und heuere ein Team von Spezialisten an.<br /><br />
+                <span class="bold">Lebendige Welt:</span>
+                Los Santos ist bis ins kleinste Detail atemberaubend. Hier kann
+                man Golf spielen, Yoga machen, jagen, Flugzeuge fliegen oder
+                sogar den Meeresgrund mit einem U-Boot erkunden.<br /><br />
+                <span class="bold">GTA Online:</span>
+                Das Hauptspiel beinhaltet einen Mehrspielermodus, in dem Sie
+                Ihren eigenen Charakter erstellen und mit Ihren Freunden Ihr
+                eigenes kriminelles Imperium aufbauen können.
+              </span>
+            </p>
+          </div>
+
+          <!--Французкая версия-->
+          <div class="lang-block" data-lang-content="FR" style="display: none">
+            <h2>Bienvenue à Los Santos !</h2>
+            <p>
+              <span class="text-fix">
+                Ce jeu d'action emblématique en monde ouvert de Rockstar Games
+                est devenu un véritable phénomène dans l'industrie du jeu vidéo.
+                Plongez au cœur de la vaste métropole de Los Santos et de ses
+                environs pittoresques, le comté de Blaine, inspirés du sud de la
+                Californie.<br /><br />
+                <span class="bold">Intrigue: — Trois Destins</span><br /><br />
+                Pour la première fois dans la série, l'intrigue s'articule
+                autour de trois personnages principaux, dont les destins
+                s'entrecroisent au cours d'une série d'aventures périlleuses:<br /><br />
+                Ensemble, ce trio doit réaliser les braquages​ ​les plus
+                audacieux de l'histoire de l'État pour survivre dans un monde où
+                agences de renseignement corrompues, cartels mexicains et
+                milliardaires se sont retournés contre eux.<br /><br />
+                <span class="bold">Caractéristiques principales du jeu</span
+                ><br /><br />
+                <span class="bold">Trois personnages – Un gameplay:</span>
+                Vous pouvez passer d'un personnage à l'autre presque à tout
+                moment. Chacun d'eux possède des capacités uniques: Michael
+                ralentit le temps lorsqu'il tire, Franklin lorsqu'il conduit, et
+                Trevor entre dans une rage incontrôlable au combat.<br /><br />
+                <span class="bold">Braquages ​​d'envergure:</span>
+                Planifiez soigneusement chaque mission: choisissez votre
+                tactique (infiltration ou affrontement armé) et recrutez une
+                équipe de spécialistes.<br /><br />
+                <span class="bold">Monde vivant:</span>
+                Los Santos est incroyablement détaillée. Vous pouvez y jouer au
+                golf, faire du yoga, chasser, piloter des avions, ou même
+                explorer les fonds marins en sous-marin.<br /><br />
+                <span class="bold">GTA Online:</span>
+                Le jeu principal propose un mode multijoueur, où vous créez
+                votre propre personnage et bâtissez votre empire criminel avec
+                vos amis.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="platform-info">
+          <span data-key="platform_label">Платформа:</span>
+          <div class="platform-icons">
+            <img src="image_icons/Windows.svg" />
+            <img src="image_icons/Xbox.svg" />
+            <img src="image_icons/PlayStation.svg" />
+          </div>
+        </div>
+        <a href="Catalog.html" class="btn-more" data-key="btn_more"
+          >Подробнее</a
+        >
+      </div>
+      <div class="hero-visual">
+        <img
+          class=""
+          src="logo/GTA.webp"
+          alt="logo gta 5"
+          fetchpriority="high"
+        />
+        <div class="rating-game">
+          <div class="rating-value">9.3</div>
+          <div class="rating-info">
+            <span class="rating-label" data-key="rating_label"
+              >РЕЙТИНГ ИГРЫ</span
+            >
+            <div class="rating-stars">
+              <img src="image_icons/star.svg" alt="star" />
+              <img src="image_icons/star.svg" alt="star" />
+              <img src="image_icons/star.svg" alt="star" />
+              <img src="image_icons/star.svg" alt="star" />
+              <img src="image_icons/star-empty.svg" alt="star-empty" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="popular-anchor">
+      <nav class="catalog-nav">
+        <ul class="catalog-menu">
+          <li>
+            <a href="#" data-category="discounts" data-key="tab_discounts"
+              >Скидки</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="active"
+              data-category="popular"
+              data-key="tab_popular"
+              >Популярное</a
+            >
+          </li>
+          <li>
+            <a href="#" data-category="realease" data-key="tab_releases"
+              >Релизы</a
+            >
+          </li>
+          <div class="moving-line"></div>
+        </ul>
+      </nav>
+
+      <div class="slider-container">
+        <!-- Стрелка влево -->
+        <button class="slider-arrow prev">
+          <img src="image_icons/Left_Arrow.svg" />
+        </button>
+
+        <!--Product cards-->
+
+        <div class="cards-wrapper">
+          <!-- Карточка Sea of Thieves (обычная) -->
+          <div class="game-card skeleton" data-category="popular">
+            <div class="game-poster">
+              <img src="images/Sea of Thieves.webp" loading="lazy" />
+            </div>
+            <div class="card-info">
+              <h3 class="game-title">Sea of Thieves</h3>
+              <div class="card-buy">
+                <span class="cent">990 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка Days Gone -->
+          <div class="game-card skeleton" data-category="popular">
+            <img src="images/Days Gone.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Days Gone</h3>
+              <div class="card-buy">
+                <span class="cent">819 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка Cyberpunk 2077 (Центральная) -->
+          <div class="game-card skeleton active" data-category="popular">
+            <img src="images/Cyberpunk 2077.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Cyberpunk 2077</h3>
+              <div class="card-buy">
+                <span class="cent">2 999 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка Red Dead Redemption II -->
+          <div class="game-card skeleton" data-category="popular">
+            <img src="images/Red Dead 2.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Red Read Redemption II</h3>
+              <div class="card-buy">
+                <span class="cent">1 279 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Карточка Atomic Heart -->
+          <div class="game-card skeleton" data-category="popular">
+            <img src="images/Atomic Heart.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Atomic Heart</h3>
+              <div class="card-buy">
+                <span class="cent">1 809 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Releases -->
+          <div class="game-card skeleton" data-category="realease">
+            <img src="images/Bus_Bound.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Bus Bound</h3>
+              <div class="card-buy">
+                <span class="cent">3 308 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="realease">
+            <img src="images/Code_Vein_II.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Code Vein II</h3>
+              <div class="card-buy">
+                <span class="cent">4 800 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="realease">
+            <img src="images/Crimson Desert.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Crimson Desert</h3>
+              <div class="card-buy">
+                <span class="cent">4 148 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="realease">
+            <img src="images/Reanimal.png" loading="lazy" />
+            <div class="card-info">
+              <h3>Reanimal</h3>
+              <div class="card-buy">
+                <span class="cent">1 299 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="realease">
+            <img src="images/Masters_Albion.png" loading="lazy" />
+            <div class="card-info">
+              <h3>Masters of Albion</h3>
+              <div class="card-buy">
+                <span class="cent">899 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+          <!-- Releases -->
+
+          <!-- Discounts -->
+          <div class="game-card skeleton" data-category="discounts">
+            <div class="discount-badge">90%</div>
+            <img src="images/A_Way_Out.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>A Way Out</h3>
+              <div class="card-buy">
+                <span class="cent">150 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="discounts">
+            <div class="discount-badge">50%</div>
+            <img src="images/Forza_V.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Forza Horizon 5</h3>
+              <div class="card-buy">
+                <span class="cent">1 300 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="discounts">
+            <div class="discount-badge">85%</div>
+            <img src="images/Hogwarts_Legacy.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Hogwarts Legacy</h3>
+              <div class="card-buy">
+                <span class="cent">480 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="discounts">
+            <div class="discount-badge">80%</div>
+            <img src="images/Mafia_Definitive_Edition.png" loading="lazy" />
+            <div class="card-info">
+              <h3>Mafia Definitive Edition</h3>
+              <div class="card-buy">
+                <span class="cent">720 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card skeleton" data-category="discounts">
+            <div class="discount-badge">80%</div>
+            <img src="images/Witcher_3_Wild_Hunt.webp" loading="lazy" />
+            <div class="card-info">
+              <h3>Witcher 3 Wild Hunt</h3>
+              <div class="card-buy">
+                <span class="cent">720 ₽</span>
+                <a href="But.html" data-key="buy_btn">Купить</a>
+              </div>
+            </div>
+          </div>
+          <!-- Discounts -->
+        </div>
+        <button class="slider-arrow next">
+          <img src="image_icons/Right_Arrow.svg" />
+        </button>
+      </div>
+    </section>
+    <!-- Product cards -->
+    <!--End of main page-->
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Левая колнка: Лого и Навигация -->
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="logo/logo.svg" alt="Game Bar" />
+          </div>
+          <ul class="footer-links">
+            <li><a href="#" data-key="nav_new">Популярное</a></li>
+            <li><a href="#" data-key="nav_how">Как купить</a></li>
+            <li><a href="#" data-key="nav_news">Новости</a></li>
+            <li><a href="#" data-key="nav_catalog">Каталог</a></li>
+          </ul>
+        </div>
+        <!-- Средняя колонка: Поддержка -->
+        <div class="footer-col">
+          <h3 data-key="support">Поддержка</h3>
+          <div class="contact-item">
+            <img src="image_icons/Gmail.svg" alt="Gmail" />
+            <a href="Supurt.html">gamebar@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <img class="phone" src="image_icons/Phone.svg" alt="Phone" />
+            <a href="Supurt.html">+7 909 808-55-00</a>
+          </div>
+        </div>
+
+        <!-- Правая колонка: Язык и Соцсети -->
+        <div class="footer-col">
+          <h3 data-key="lang_title">Язык</h3>
+          <div class="language-wrapper">
+            <div class="language-select" id="langToggle">
+              <span id="currentLang" data-key="lang_name">Русский</span>
+              <img src="image_icons/Arrow_lang.svg" alt="" class="arrow" />
+            </div>
+            <!-- Выпадающее меню -->
+            <ul class="language-dropdown" id="langMenu">
+              <li data-value="English" data-lang="EN">English</li>
+              <li data-value="Deutsch" data-lang="DE">Deutsch</li>
+              <li data-value="Français" data-lang="FR">Français</li>
+              <li data-value="Русский" data-lang="RU">Русский</li>
+            </ul>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://www.youtube.com/"
+              ><img class="you-tube" src="image_icons/You_Tube.svg"
+            /></a>
+            <a href="https://vk.com/"
+              ><img src="image_icons/Vcontakte.svg"
+            /></a>
+            <a href="https://web.telegram.org/"
+              ><img src="image_icons/Telegram.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">2026</p>
+    </footer>
+
+    <script src="translation.js"></script>
+  </body>
+</html>

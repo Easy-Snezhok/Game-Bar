@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | Bar</title>
+    <link rel="stylesheet" href="Registration.css" />
+    <link rel="icon" href="logo/Logo_favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="login-logo">
+        <img src="logo/Big_logo.svg" alt="Game Bar" />
+      </div>
+
+      <div class="register-box">
+        <h2 class="reg-title" data-key="reg_title">СОЗДАНИЕ АККАУНТА</h2>
+        <form class="login-form" action="Register_Step2.html">
+          <div class="input-group">
+            <label data-key="label_email">Адрес эл. почты</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="input-group">
+            <label data-key="label_confirm_email"
+              >Подтвердите адрес эл. почты</label
+            >
+            <input type="email" id="confirm-email" required />
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="age-confirm" required />
+            <label for="age-confirm" data-key="label_age">
+              Я поддтверждаю, что мне исполнилось
+              <span class="highlight">13 лет</span> и принимаю условия
+              соглашения GAME | BAR
+            </label>
+          </div>
+
+          <div class="btn-wrapper">
+            <button type="submit" class="btn-login" data-key="reg_continue">
+              ПРОДОЛЖИТЬ
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="translation.js"></script>
+  </body>
+</html>

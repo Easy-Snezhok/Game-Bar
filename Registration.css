@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #161616;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-logo {
+  margin-bottom: 30px;
+}
+
+/* Контейнер для формы */
+.register-box {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reg-title {
+  color: #00ffcc;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  color: #c2c2c2;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  background: #3d3d3d;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #00ffcc;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  color: #c2c2c2;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+/* button */
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-login {
+  width: 250px;
+  padding: 15px;
+  background: none;
+  border: 2px solid #00ffcc;
+  border-radius: 12px;
+  color: #00ffcc;
+  font-size: 22px;
+  font-weight: normal;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255);
+  border: 2px solid white;
+  color: white;
+  transform: scale(1.03);
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game | Bar</title>
+    <link rel="stylesheet" href="Login.css" />
+    <link rel="icon" href="logo/Logo_favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="login-logo">
+        <img src="logo/Big_logo.svg" alt="Game Bar" />
+      </div>
+
+      <h2 data-key="login_title">ВХОД В АККАУНТ</h2>
+
+      <form class="login-form">
+        <div class="input-group">
+          <label data-key="label_name">ВОЙДИТЕ С ПОМОЩЬЮ ИМЯ АККАУНТА</label>
+          <input type="text" id="username" />
+        </div>
+
+        <div class="input-group">
+          <label data-key="label_pass">ПАРОЛЬ</label>
+          <input type="password" id="password" />
+        </div>
+
+        <button type="submit" class="btn-login" data-key="login_btn">
+          ВОЙТИ
+        </button>
+      </form>
+
+      <div class="login-footer">
+        <a href="#" data-key="help_login"
+          >Помогите, я не могу войти в аккаунт</a
+        >
+        <a href="Register.html" data-key="create_acc">Создайте аккаунт</a>
+      </div>
+    </main>
+    <script src="translation.js"></script>
+  </body>
+</html>
