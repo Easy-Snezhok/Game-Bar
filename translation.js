@@ -1,4 +1,3 @@
-// --- 1. СЛОВАРЬ (Добавь свои ключи сюда) ---
 const translations = {
    RU: {
         "nav_new": "Популярное",
@@ -33,8 +32,6 @@ const translations = {
         "label_username": "Придумайте имя аккаунта",
         "label_new_pass": "Придумайте пароль",
         "label_confirm": "Подтвердите пароль",
-
-        // ... допиши сюда остальные свои ключи с главной страницы
     },
     EN: {
           lang_name: "English",
@@ -252,21 +249,17 @@ window.addEventListener("load", () => {
 if (nextBtn) nextBtn.onclick = () => changeCard(1);
 if (prevBtn) prevBtn.onclick = () => changeCard(-1);
 
-      // --- КОД ПРЕЛОАДЕРА (В самый конец файла) ---
+      // --- КОД ПРЕЛОАДЕРА ---
 window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     
     if (preloader) {
-        // ПРОВЕРКА: Если в памяти браузера уже есть метка "был на сайте"
+        // ПРОВЕРКА
         if (sessionStorage.getItem('visited')) {
-            // Сразу удаляем прелоадер без всяких задержек и анимаций
             preloader.style.display = 'none';
         } else {
-            // Если зашел ПЕРВЫЙ РАЗ:
-            // 1. Ставим метку в память
             sessionStorage.setItem('visited', 'true');
             
-            // 2. Твоя стандартная логика с задержкой (например, 5 секунд)
             setTimeout(() => {
                 preloader.classList.add('preloader-hidden');
             }, 5000);
@@ -275,17 +268,14 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('load', () => {
-    // Находим все карточки, которые помечены как скелетоны
     const skeletonCards = document.querySelectorAll('.game-card.skeleton');
     
     skeletonCards.forEach(card => {
         const img = card.querySelector('img');
         
-        // Если картинка уже загружена (из кэша)
         if (img.complete) {
             card.classList.remove('skeleton');
         } else {
-            // Ждем загрузки
             img.addEventListener('load', () => {
                 card.classList.remove('skeleton');
             });
